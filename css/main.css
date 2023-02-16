@@ -70,9 +70,20 @@ input {
 header {
   background-image: url("../../assets/drip.svg");
   background-repeat: repeat-x;
+  background-size: 80em;
+  display: flex;
 }
 header #logo {
-  max-width: 26em;
+  width: 35em;
+}
+@media (max-width: 480px) {
+  header {
+    justify-content: center;
+    background-size: 50em;
+  }
+  header #logo {
+    width: 20em;
+  }
 }
 
 footer p {
@@ -85,37 +96,27 @@ footer p {
   font-family: "Roca Two Bold";
   src: url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff") format("woff"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold") format("svg");
 }
+#layover {
+  position: fixed;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 main #roulette {
-  width: 100vw;
-  max-width: 70em;
+  width: 60vw;
+  min-width: 340px;
   transform-origin: center;
 }
-main #roulette.spin {
-  animation: spin 6s infinite linear;
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(360deg);
-  }
-  20% {
-    -webkit-transform: rotate(720deg);
-  }
-  40% {
-    -webkit-transform: rotate(1080deg);
-  }
-  70% {
-    -webkit-transform: rotate(1440deg);
-  }
-  100% {
-    -webkit-transform: rotate(1800deg);
+@media (max-width: 350px) {
+  main #roulette {
+    width: 100vw;
   }
 }
 

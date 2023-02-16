@@ -2,29 +2,24 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/font";
+@import "layout/layover";
+
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    overflow: hidden;
+
     #roulette {
-        width: 100vw;
-        max-width: 70em;
+        width: 60vw;
+        min-width: 340px;
 
         transform-origin: center;
 
-        &.spin {
-            animation: spin 6s infinite linear;
-        }
-    }
-
-    @keyframes spin {
-        0% { -webkit-transform: rotate(0deg); }
-        10% { -webkit-transform: rotate(360deg); }
-        20% { -webkit-transform: rotate(720deg); }
-        40% { -webkit-transform: rotate(1080deg); }
-        70% { -webkit-transform: rotate(1440deg); }
-        100% { -webkit-transform: rotate(1800deg); }
+        @media (max-width: 350px) {
+            width: 100vw;
+        }    
     }
 }

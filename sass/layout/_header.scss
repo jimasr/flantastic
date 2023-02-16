@@ -2,7 +2,21 @@ header {
     background-image: url("../../assets/drip.svg");
     background-repeat: repeat-x;
 
+    background-size: 80em;
+
+    display: flex;
+
     #logo {
-        max-width: 26em;
+        width: 35em;
     }
+
+    @media (max-width: 480px) {
+        justify-content: center;
+        background-size: 50em;
+
+        #logo {
+            width: 20em;
+        }
+    }    
+    
 }

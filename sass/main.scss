@@ -12,14 +12,43 @@ main {
 
     overflow: hidden;
 
-    #roulette {
-        width: 60vw;
-        min-width: 340px;
+    .container {
+        position: relative;
 
-        transform-origin: center;
-
-        @media (max-width: 350px) {
-            width: 100vw;
-        }    
+        #arrow {
+            position: absolute;
+    
+            width: 16em;
+    
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            z-index: 1000;
+    
+            @media (max-width: 500px) {
+                width: 8em;
+    
+                top: 10%;
+                left: 50%;
+    
+                transform: translate(-50%, -50%);
+    
+    
+            }   
+    
+        }
+    
+    
+        #roulette {
+            width: 60em;
+            min-width: 340px;
+    
+            transform-origin: center;
+    
+            @media (max-width: 500px) {
+                width: 100vw;
+            }    
+        }
     }
 }

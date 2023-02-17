@@ -38,7 +38,10 @@ html body {
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: hidden;
-  background-color: hsla(6deg, 36%, 51%, 0.596);
+  background-color: hsl(41deg, 100%, 92%);
+  background-image: url("../../assets/flan.png");
+  background-repeat: repeat;
+  background-size: 100vw;
 }
 
 main {
@@ -70,19 +73,18 @@ input {
 header {
   background-image: url("../../assets/drip.svg");
   background-repeat: repeat-x;
-  background-size: 80em;
+  background-size: 50em;
+  padding: 3em;
   display: flex;
 }
 header #logo {
-  width: 35em;
+  width: 20em;
+  margin: -5em 0 0 -2em;
 }
 @media (max-width: 480px) {
   header {
     justify-content: center;
     background-size: 50em;
-  }
-  header #logo {
-    width: 20em;
   }
 }
 
@@ -109,13 +111,32 @@ main {
   align-items: center;
   overflow: hidden;
 }
-main #roulette {
-  width: 60vw;
+main .container {
+  position: relative;
+}
+main .container #arrow {
+  position: absolute;
+  width: 16em;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+@media (max-width: 500px) {
+  main .container #arrow {
+    width: 8em;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+main .container #roulette {
+  width: 60em;
   min-width: 340px;
   transform-origin: center;
 }
-@media (max-width: 350px) {
-  main #roulette {
+@media (max-width: 500px) {
+  main .container #roulette {
     width: 100vw;
   }
 }

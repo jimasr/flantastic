@@ -12,14 +12,12 @@
         let x = e.clientX;
         let y = e.clientY;
 
-        console.log(`x: ${x}, y: ${y}`);
 
         degree = degree + rotation;
 
         roulette.style.transition = `all ${force}s ease-out`;
         roulette.style.transform = `rotate(${degree}deg)`;
 
-        console.log(layover);
 
         layover.style.left = `${x} px`;
         layover.style.top = `${y} px`;

@@ -1,0 +1,54 @@
+@import "base/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/font";
+@import "layout/layover";
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    .container {
+        position: relative;
+
+        #arrow {
+            position: absolute;
+    
+            width: 16em;
+    
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            z-index: 1000;
+    
+            @media (max-width: 500px) {
+                width: 8em;
+    
+                top: 10%;
+                left: 50%;
+    
+                transform: translate(-50%, -50%);
+    
+    
+            }   
+    
+        }
+    
+    
+        #roulette {
+            width: 60em;
+            min-width: 340px;
+    
+            transform-origin: center;
+    
+            @media (max-width: 500px) {
+                width: 100vw;
+            }    
+        }
+    }
+}

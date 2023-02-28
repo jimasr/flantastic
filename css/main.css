@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Roca Two Bold";
+  src: url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff") format("woff"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold") format("svg");
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, code, em, img, small, strike,
+strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form,
+label, table, caption, tbody, tfoot, thead, tr, th, td,
+main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roca Two Bold";
+  min-width: 350px;
+}
+html body {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background-color: hsl(41deg, 100%, 92%);
+  background-image: url("../../assets/flan.png");
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+main {
+  flex-grow: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+header {
+  background-image: url("../../assets/drip.svg");
+  background-repeat: repeat-x;
+  background-size: 50em;
+  padding: 3em;
+  display: flex;
+}
+header #logo {
+  width: 20em;
+  margin: -5em 0 0 -2em;
+}
+@media (max-width: 480px) {
+  header {
+    justify-content: center;
+    background-size: 50em;
+  }
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@font-face {
+  font-family: "Roca Two Bold";
+  src: url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff") format("woff"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold") format("svg");
+}
+#layover {
+  position: fixed;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .container {
+  position: relative;
+}
+main .container #arrow {
+  position: absolute;
+  width: 16em;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+@media (max-width: 500px) {
+  main .container #arrow {
+    width: 8em;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+main .container #roulette {
+  width: 60em;
+  min-width: 340px;
+  transform-origin: center;
+}
+@media (max-width: 500px) {
+  main .container #roulette {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
